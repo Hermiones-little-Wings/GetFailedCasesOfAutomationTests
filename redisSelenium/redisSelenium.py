@@ -1,5 +1,6 @@
 import time
 import re
+import DataProcessingToExcel
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium import webdriver
@@ -34,7 +35,7 @@ accepted = driver.find_element(By.XPATH, '/html/body/main/div[2]/div[2]/form[2]/
 
 accepted.click()
 
-time.sleep(40)
+time.sleep(35)
 
 #点击展开所有错误测试
 print("错误测试展开中.....")
@@ -62,7 +63,9 @@ with open("test_results.txt", "w", encoding="utf-8") as file:
             else:
                 file.write(matche + "\n")
             
-print("保存成功")
+print("保存成功！文件为test_results.txt")
 
 # 关闭浏览器
 driver.quit()
+
+DataProcessingToExcel.DataProcessingToExcel()
