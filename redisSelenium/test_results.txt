@@ -1,0 +1,11 @@
+ModifyShardCountMRPP.ModifyShardCountMRPPTest(replicas: 2, shardcount: 2, zones: 3)
+DisableAccessKeyAuthenticationTests.PostCacheCreateDisableAccessKeyAuthTests(sku: "Basic", family: "C", size: 0)
+EnableAzTest.CreateNonAzClusteredMRPPVNetCacheAndTestEnableAz
+EnableAzTest.CreateNonAzVNetCacheAndTestEnableAz
+EnableAzTest.CreateNonAzClusteredVNetCacheAndTestEnableAz
+EnableAzTest.CreateNonAzMRPPVNetCacheAndTestEnableAz
+RebootClusterPremiumCache.RebootClusterPremiumCacheTest(shards: 4, type: Master)
+CreateCacheWithFireWallRulseSSLTest.CreateCacheWithFireWallRulesTests(allowAllTrafficWithFirewallRule: True)
+CreateCacheWithFireWallRulseSSLTest.CreateCacheWithFireWallRulesTests(allowAllTrafficWithFirewallRule: False)
+CreateCacheWithFireWallRulseSSLTest.CreateCacheWithMultipleFireWallRulesTests
+PremiumCacheAOFTests.ClusteredPremiumCacheAOFWithUAITest
